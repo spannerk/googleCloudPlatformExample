@@ -26,17 +26,17 @@ SECRET_KEY = 'secret'
 # configure the respective settings for the one you choose below.
 # You do not have to configure the other data backends. If unsure, choose
 # 'datastore' as it does not require any additional configuration.
-DATA_BACKEND = 'datastore'
+DATA_BACKEND = 'cloudsql'
 
 # Google Cloud Project ID. This can be found on the 'Overview' page at
 # https://console.developers.google.com
-PROJECT_ID = 'your-project-id'
+PROJECT_ID = 'dota-2-counter-picker'
 
 # SQLAlchemy configuration
 # Replace user, pass, host, and database with the respective values of your
 # Cloud SQL instance.
 SQLALCHEMY_DATABASE_URI = \
-    'mysql+pymysql://user:password@host/database'
+    'mysql+pymysql://pythonapp:DotaDragonApp@173.195.230.9/library'
 
 # Mongo configuration
 # If using mongolab, the connection URI is available from the mongolab control
